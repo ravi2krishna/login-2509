@@ -22,3 +22,10 @@ courses:
 - azure
 - devops
 - python
+
+# k8s object representation
+# k8s yaml contains four top level items
+apiVersion:
+kind:
+metadata:
+spec:
