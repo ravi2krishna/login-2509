@@ -1,0 +1,20 @@
+# Run Nginx Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ____________________
+spec:
+  replicas: ________________
+  selector:
+    matchLabels:
+      app: _________________
+  template:
+    metadata:
+      labels:
+        app: ________________
+    spec:
+      containers:
+      - name: _______________
+        image: ______________
+        ports:
+        - containerPort: ____      

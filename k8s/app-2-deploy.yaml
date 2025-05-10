@@ -1,0 +1,20 @@
+# Run Nginx Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: login
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: login
+  template:
+    metadata:
+      labels:
+        app: login
+    spec:
+      containers:
+      - name: login-container
+        image: ravi2krishna/login-2509
+        ports:
+        - containerPort: 80        
